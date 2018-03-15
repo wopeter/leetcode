@@ -1,12 +1,13 @@
 """
 Description:
-Given a positive integer, rturn its corresponding column title as appear in an excel sheet.
+Given a positive integer, return its corresponding column title as appear in an excel sheet.
 for example:
 1 -> A
 2 -> B
 ...
 26 -> Z 
 27 -> AA
+28 -> AB
 ...
 """
 
