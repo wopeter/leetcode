@@ -30,6 +30,6 @@ class Solution(object):
     def hammingWeight2(self, n)
         int sum = 0
         while n:
-            sum++
+            sum += 1
             n &= (n - 1)
         return sum
