@@ -44,7 +44,18 @@ Explanation:
 Let miss be the smallest sum in [0, n] that we might be missing. Meaning we already know we can build all sums
 in [0, miss), Then if we have a number num <= miss in the given array, we can add it to those smaller sums to build all sums in [0, miss+num).If we don't, then we must add such a number to the array, and it's best to add
 miss itself, to maximize the reach.
-"""        
+"""     
+    def minPatches2(self, nums, n):
+        sum = ans = i = 0
+        while sum < n:
+            if (i < len(nums) and nums[i] <= sum + 1):
+                sum += nums[i]
+                i += 1
+            else:
+                ans += 1
+                sum += sum + 1
+        return ans
+        
  
 
 
